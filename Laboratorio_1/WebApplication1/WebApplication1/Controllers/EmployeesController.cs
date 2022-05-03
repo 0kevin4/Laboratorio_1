@@ -18,7 +18,7 @@ namespace WebApplication1.Controllers
         public ActionResult Index()
         {
             IEnumerable<Employee> coLEmployees = _context.Employees;
-            return View();
+            return View(coLEmployees);
         }
 
         // GET: EmployeesController/Details/5
